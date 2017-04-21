@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="css/index.css">    
+    <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
+  <script src ="searchjs.js"></script>
+  <style>
+      /*body {
+          background-color: bisque;
+      }*/
+      .headStop{
+            position: fixed; /* Stay in place */                
+            top:0;
+            left:0;
+            width: 100%;
+            clear: both;
+        }
+        /*#searchbar{
+
+        }*/
+       #linkmain {
+            /*padding: 8px 8px 8px 0;*/
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #992600; /*#818181*/
+            display: block;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .headStop a:hover, a:focus{
+            color: #e68a00;
+        }
+
+        img{
+            width: 100%;
+            padding-bottom: 5px;
+        }
+        #whatever{
+            background: white;
+        }        
+
+        /*li{
+            padding: 10px 10px 10px 10px;
+            background: white;
+        }*/
+        .collapsible-header{
+            margin: 10px;
+            background: white;
+        }
+
+        /*
+        .collapsible-body{
+            margin-top: 10px;
+            background: white;
+            border-color: e67300; /*#e68a00;
+            box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;
+            border-style: solid;
+            margin-bottom: 15px;
+        }
+        h4{
+            padding-top: 15px;
+        }
+        hr{
+            padding-top: 15px;
+        }
+        h2{
+            padding-top: 15px;
+        }*/
+        
+    </style>
+
+</head>
+<body>
+    <div class="headStop">
+        <div class="page-header">
+            <h1>Trade Smart</h1>
+        </div>
+        <!--<input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">-->
+        <div id="searchbar">
+        <form id="searching" method="post" onsubmit="searchman()">
+            <input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">
+            <!--<input type="text" id="search" name="search" required autofocus>
+            <input type="submit" onclick="return searchman();" value="Search">-->
+        </form>
+        <a href="index.html" id="linkmain">Main menu</a>
+        </div>
+    </div>
+
+    <div id="whatever">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2017, Trade Smart</p>
+    </footer>
+</body>
+</html>

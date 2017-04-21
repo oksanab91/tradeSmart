@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+        id="com.phonegap.conestogatrade"
+        version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Conestoga trade</name>
+    <description>
+        Make your postings for conestoga college
+    </description>
+    <author email="tolulopeibiyode@gmail.com" href="#">
+        Gods1son and capstone team
+    </author>
+    <preference name="orientation" value="portrait"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="permissions" value="none"/>
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-camera" source="npm"/>
+    <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+    <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
+    <preference name="android-build-tool" value="gradle" />
+    <content src="index.html" />
+    <icon height="48" src="android-icon-48x48.jpg" width="48"/>
+    <splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+    <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+    <splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+    <splash src="splash.png" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+
+</widget>

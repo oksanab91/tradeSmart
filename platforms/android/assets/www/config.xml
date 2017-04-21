@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+        id="com.phonegap.NaijaMascoteer"
+        version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>9ja Mascots</name>
+    <description>
+        How many celebrities do you know in 9ja
+    </description>
+    <author email="tolulopeibiyode@gmail.com" href="#">
+        Gods1son and @tundetash
+    </author>
+    <content src="index.html" />
+    <icon height="48" src="images/android-icon-48x48.jpg" width="48"/>
+    <icon height="48" platform="android" src="images/android-icon-48x48.jpg" width="48"/>
+    <icon height="48" platform="ios" src="images/android-icon-48x48.jpg" width="48"/>
+    <icon height="48" platform="windows" src="images/android-icon-48x48.jpg" width="48"/>
+</widget>

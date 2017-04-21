@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Conestoga Trade</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="16x16" href="android-icon-96x96.png">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="indexcss.css">
+<!--<link rel="stylesheet" href="css/slicknav.css">-->
+<script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src ="indexjs.js"></script>
+
+</head>
+
+<body>
+    <div id="splash" style="width: 98vw; height: 90vh;"><img src="img/newlogo3.png" style="margin-top:30vh;margin-left:20vw;"></div>
+    <!--<div class="page-header">
+       <img src="img/newlogo3.png" alt="logo" height=55px/>
+       <h1>Trade Smart</h1>
+        <!--<h1>Welcome to conestoga trade</h1>
+    </div>-->
+    <div class="page-header">    
+       <!--<img src="img/newlogo3.png" alt="logo" height=55px/>-->
+       <h1>Trade Smart</h1>
+        <!--<h1>Welcome to conestoga trade</h1>-->
+    </div>    
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="homepage.html">Home</a>
+        <!--<a href="#homepagehere" onclick="homepagehere()">Home2</a>-->
+        <a href="#scan" onclick="openscanner()">Scan Barcode</a>
+        <a href="#">Contact</a>        
+    </div>
+    <!--<h1>Trade Smart</h1>-->
+
+    <!-- Use any element to open the sidenav -->
+    <div class="topMenu">
+        <!--<input type="text" id="searchFilter" onkeyup="" placeholder="Search...">-->
+        <span onclick="openNav()"></span>   
+        <span style="font-size:35px;color:white;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <br>
+    <!--<a id="logout" href="#" onclick="logout()">Logout</a><br><br>-->
+    <!--<input type="button" id="signup" value="Register" onclick="showsignup()"><br><br>
+    <input type="button" id="signin" value="Sign In" onclick="showsignin()"><br><br>
+    <input type="button" id="homepage" value="Go to homepage" onclick="openhomepage()"><br><br>
+    <input type="button" id="scan" value="Scan Barcode" onclick="openscanner()"><br><br>
+    <input type="button" id="post" value="Make a Post" onclick="showpost()" style="display:none;">
+    <span style="display:none;" id="anotherspace"><br></span>
+    <input type="button" id="homepagehere" value="Homepage Here" onclick="homepagehere()"><br><br>
+    <input type="button" id="searchhere" value="Search Here" onclick="searchhere()"><br><br>-->
+
+    <!--menu icons-->
+    <div id="menuIcons">
+        <div id="searchhere" value="Search Here" onclick="searchhere()">
+            <img src="img/search.png" alt="Search" width="100">
+        </div>
+        <div id="homepagehere" value="Homepage Here" onclick="homepagehere()">
+            <img src="img/home.png" alt="Home" width="100">
+        </div>
+        <div id="contact">
+            <img src="img/contact.png" alt="Contact" width="100">
+        </div>
+        <div id="scan" value="Scan Barcode" onclick="openscanner()">
+            <img src="img/scan.png" alt="Scan Barcode" width="100">
+        </div>
+    </div>
+
+    <div id="signuppage">
+        <h2>Sign up form below</h2>
+        <form method="post" id="registernew" onsubmit="registerman()">
+            Username: <input type="text" name="username"><br><br>
+            Email: <input type="text" id = "email" name="email" required><br><br>
+            Password: <input type="password" name="password"><br><br>
+            Enter Password Again: <input type="password" name="passwordtwo"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <div id="signinpage">
+        <h2>Sign in below</h2>
+        <input id="signemail" type="email" placeholder="email@domain.com" /><br><br>
+        <input id="signpassword" type="password" placeholder="password" /><br><br>
+        <button id="login" onclick="signingin()">Login</button>
+    </div>
+
+    <div id="postpage">
+        <h2>Fill form below to post</h2>
+        <input type="button" onclick="getPhoto()" value="Select Image"><span id="imageselected"></span>
+        <form method="POST" id="postman" enctype="multipart/form-data">
+            Title: <input type="text" name="title" id="title"> <span id="title_error"></span><br><br>
+            Price: <input type="text" name="price" id="price"> <span id="price_error"></span><br><br>
+            Ur Contact: <input type="text" name="contact" id="contact"> <span id="contact_error"></span><br><br>
+            Description: <textarea rows="3" id="description" name="description"></textarea> <span id="description_error"></span><br><br>
+            <span style="display:none;">Qr Code: <input type="text" id="code" name="code"><br><br></span>
+            <img src="submitgif.gif" style="z-index:2;width:50px;display:none" id="submitgif">
+            <input type="button" id="btnSubmit" value="Make Post" onclick="uploadPhoto()"><span id="loading" style="font-size:1.2em;color:red;"></span>
+        </form>
+        </div>
+
+    <div id="displayresponse">
+        <span id="resp"></span>
+    </div>
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+
+    
+    <footer>
+		<p>&copy; 2017, Trade Smart</p>
+	</footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

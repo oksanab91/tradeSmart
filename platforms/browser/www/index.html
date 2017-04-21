@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Mascots</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="gamecss.css">
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src ="game.js"></script>
+<link rel="icon" type="image/png" sizes="16x16" href="android-icon-96x96.png">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+  <h1 id="Naija">9ja Mascots</h1>
+<p><span class="label">Score:</span> <span id="score">0    </span> <span class="label">  Level:</span> <span id="level">1</span> </p>
+</header>
+<main>
+<p id="clue">The name has <span id="numbernames"></span> letters</p>
+<img id="images" width="80%"><br>
+<input type="text" id="trial" autofocus disabled><br>
+    <div id="options">
+    <p><input type="button" id="space" onclick="addSpace()" value="space" class="master"> <input type="button" id="backspace" onclick="wipeLast()" value="&#8592;" class="master"></p> <br>
+
+    <p><input type="button" id="0" onclick="clickThing(0)" class="entry"><input type="button" id="1" onclick="clickThing(1)" class="entry"><input type="button" id="2" onclick="clickThing(2)" class="entry"><input type="button" id="3" onclick="clickThing(3)" class="entry"><input type="button" id="4" onclick="clickThing(4)" class="entry"></p><br>
+    <p><input type="button" id="5" onclick="clickThing(5)" class="entry"><input type="button" id="6" onclick="clickThing(6)" class="entry"><input type="button" id="7" onclick="clickThing(7)" class="entry"><input type="button" id="8" onclick="clickThing(8)" class="entry"><input type="button" id="9" onclick="clickThing(9)" class="entry"></p><br>
+    <p><input type="button" id="10" onclick="clickThing(10)" class="entry"><input type="button" id="11" onclick="clickThing(11)" class="entry"><input type="button" id="12" onclick="clickThing(12)" class="entry"><input type="button" id="13" onclick="clickThing(13)" class="entry"><input type="button" id="14" onclick="clickThing(14)" class="entry"></p><br>
+    </div>
+<button onclick="myfunction()" id="check">Check</button><button onclick="helperMan()" id="hinter">Help Me!</button><br>
+<span id="result"></span><br>
+<span id="help"></span>
+</main>
+</body>
+</html>

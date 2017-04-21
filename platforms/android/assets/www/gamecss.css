@@ -1,0 +1,90 @@
+#Naija {
+    font-size: 2.2em;
+}
+
+#clue , #numbernames {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+body {
+    background-image: url("images/background3.jpg");
+    color: bisque;
+    margin-left: 50px;
+    margin-top:20px;
+    line-height: 1px;
+
+}
+.entry {
+    margin-right: 15px;
+    background-color: azure;
+    color:indigo;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: -50px;
+    border-radius: 10px;
+}
+.master {
+    margin-right: 15px;
+    background-color: azure;
+    color:indigo;
+    font-size: 1.4em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#images {
+    border: 2px groove navy;
+    border-radius: 25px;
+    box-shadow: 5px 2px 5px #888888;
+    margin-bottom: 20px;
+}
+#options {
+
+}
+
+#trial {
+   border: 2px groove red;
+    background-color: azure;
+    font-size: 1.2em;
+    color:darkblue;
+}
+
+#check {
+  background-color: blanchedalmond;
+    color:brown;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-right: 85px;
+}
+#hinter {
+  background-color: blanchedalmond;
+    color:brown;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#result {
+    font-size: 1.4em;
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+#help {
+    font-size: 1.4em;
+    color:lawngreen;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#score, #level {
+    font-size: 40px;
+    color:aqua;
+}
+
+.label {
+    font-size:30px;
+    color:chartreuse;
+}
