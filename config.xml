@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.conestogatrade" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.tradesmart" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Trade Smart</name>
     <description>
         Make your trade postings
     </description>
-    <author email="oksanab767@gmail.com"" href="#">
+    <author email="oksanab767@gmail.com" href="https://github.com/oksanab91/tradeSmart.git">
         oksanab
     </author>
     <preference name="android-build-tool" value="gradle" />
@@ -31,7 +31,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <icon height="48" src="www/android-icon-48x48.jpg" width="48"/>
+    <icon height="48" src="android-logo.png" width="48"/>	
     <preference name = "SplashScreen" value = "screen" />
     <preference name = "SplashScreenDelay" value = "0" />
     <splash platform="android" qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
