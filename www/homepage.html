@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">    
     <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
       <style>
           /*body {
@@ -20,7 +20,7 @@
               background: white;
               /*border-width: 3px 5px 5px 0;*/
               border-width: 1;
-              width: 92%;
+              width: 94%;
               
               border-color: e67300; /*#e68a00;*/
               box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;*/
@@ -103,6 +103,8 @@
   <!-------------------------------------------------------------------------
   1) Create some html content that can be accessed by jquery
   -------------------------------------------------------------------------->
+  <!--<div id="splash" style="width: 98vw; height: 90vh;"><img src="img/newlogo3.png" style="margin-top:10vh;margin-left:10vw;"></div>-->
+
   <span class="headStop">
         <header>
             <!--<img src="img/newlogo3.png" alt="logo" height=55px/>-->
@@ -117,6 +119,10 @@
 
         <script id="source" language="javascript" type="text/javascript">
         $(document).ready(function() {
+            // setTimeout(function(){
+            //     document.getElementById("splash").style.display="none";
+            // }, 3000);
+
    /*$.ajax({
         url: "http://ec2-34-198-155-79.compute-1.amazonaws.com/json.php",
         type: "POST",

@@ -75,6 +75,9 @@ function searchhere(){
     window.location = "search.html";
 }
 
+function abouthere(){
+    window.location = "about.html";
+}
 //sending to the server for sign up
  $(document).ready(function() {
      setTimeout(function(){
