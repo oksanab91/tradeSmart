@@ -3,10 +3,7 @@
     <link rel="stylesheet" href="css/index.css">    
     <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
       <style>
-          /*body {
-              background-color: #e68a00;
-          }*/          
-
+       
           .headStop{
                 position: fixed; /* Stay in place */                
                 top:0;
@@ -14,25 +11,19 @@
                 width: 100%;
                 clear: both;
           }
-          div {
-              /*background: #e68a00;*/
-              /*position: relative;*/
+          div {             
               background: white;
               /*border-width: 3px 5px 5px 0;*/
-              border-width: 1;
-              width: 94%;
+              border-width: 1px;
+              width: 93%;
               
               border-color: e67300; /*#e68a00;*/
               box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;*/
               border-style: solid;
               margin-bottom: 15px;
-              /*margin-right: 5px;*/
-              
-              /*display: inline-block;*/
-              /*line-height: 6px;*/
+                         
               padding: 0 10px 10px 10px;
-              overflow: hidden;
-              /*height: 100px;*/
+              overflow: hidden;             
               word-wrap: break-word;            
           }
 
@@ -55,42 +46,25 @@
           }
 
           header {
-                background-color: #e67300; /* #ffcc66;  */  
-                /*padding-bottom: 9px;*/
-                /*margin: 0 0 10px 0;*/
-                padding: 25px 0;
-                border-bottom: 1px solid white;
-
-                /*background:url(img/newlogosmarttrade.png) no-repeat center left; 
-
-            /*img src="img/newlogosmarttrade.png" width="8%"/*/
-                /*background-image:-ms-linear-gradient(top, #e69900 0%, #ffeecc 51%);
-                background-image:linear-gradient (top, #e69900 0%, #ffeecc 51%);
-                background-image:-webkit-linear-gradient(top, #ffeecc 0%, #e69900 51%);*/
-            
+                background-color: #e67300; /* #ffcc66;  */ 
+                margin: auto;
+                padding: 20px 0;
+                border-bottom: 1px solid white;            
             }
             h1{
                  margin: 0;
             }
-            /*#header img{
-                position: realative;
-                float: left;   
-                padding-left: 10px;
-                padding-right: 10px;   
+            .headStop a:hover, a:focus{
+                color:#992600; 
             }
-            #header h1{
-                position: relative;
-                float: left;
-                line-height: 40px;   
-            }*/
-
+            
             a {
                 /*padding: 8px 8px 8px 0;*/
                 margin-left: 10px;
                 margin-top: 10px;
                 text-decoration: none;
                 font-size: 20px;
-                color: #992600; /*#818181*/
+                color: #e68a00;  /*#818181*/
                 display: block;
                 transition: 0.3s;
                 font-weight: bold;
@@ -111,31 +85,12 @@
             <h1>Trade Smart</h1>
         </header>
 
-   
-  <!--<h2> Welcome to Conestoga Trade </h2>-->
-  <!--<h3>Posts by students </h3>-->
         <a href="index.html">Back to Main</a>
   </span><br>
 
         <script id="source" language="javascript" type="text/javascript">
         $(document).ready(function() {
-            // setTimeout(function(){
-            //     document.getElementById("splash").style.display="none";
-            // }, 3000);
-
-   /*$.ajax({
-        url: "http://ec2-34-198-155-79.compute-1.amazonaws.com/json.php",
-        type: "POST",
-        crossDomain: true,
-        data: "id",
-        dataType: "jsonp",
-        success:function(result){
-            alert(result);
-        },
-        error:function(xhr,status,error){
-            alert(status);
-        }
-    });*/
+ 
                     $.post("http://ec2-34-198-155-79.compute-1.amazonaws.com/json.php", function (result) {
 
                     var obj = JSON.parse(result);
@@ -188,15 +143,9 @@
                                     // attach the div to the body
                                     document.body.appendChild(postdiv);
 
-
-                                   /* titleP.innerHTML = titleP.innerHTML + obj[i].title + "<br>"; 
-                                    priceP.innerHTML = priceP.innerHTML + obj[i].price + "<br>";
-                                    contactP.innerHTML = contactP.innerHTML + obj[i].contact + "<br>";
-                                    descriptionP.innerHTML = descriptionP.innerHTML + obj[i].description + "<br>";
-                                    imageP.innerHTML = imageP.innerHTML + obj[i].postimage + "<br>";*/
                                 }
 
-                                 }
+                            }
                 );
     });
 

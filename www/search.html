@@ -3,11 +3,9 @@
     <title>Search Page</title>
     <link rel="stylesheet" href="css/index.css">    
     <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
-  <script src ="searchjs.js"></script>
+  <script src ="newsearchjs.js"></script>
   <style>
-      /*body {
-          background-color: bisque;
-      }*/
+      
       .headStop{
             position: fixed; /* Stay in place */                
             top:0;
@@ -15,9 +13,11 @@
             width: 100%;
             clear: both;
         }
-        /*#searchbar{
-
-        }*/
+        
+        #searchbar{
+            float: right;
+            margin: 5 0;
+        }
        #linkmain {
             /*padding: 8px 8px 8px 0;*/
             margin-left: 10px;
@@ -29,7 +29,7 @@
             font-weight: bold;
         }
         .headStop a:hover, a:focus{
-            color: #e68a00;
+            color:#992600;
         }
 
         img{
@@ -38,60 +38,83 @@
         }
         #whatever{
             background: white;
+            width: 93%;
         }        
 
-        /*li{
-            padding: 10px 10px 10px 10px;
-            background: white;
-        }*/
+        div {          
+            background: white;            
+            border-width: 1px;                      
+            border-color: e67300; /*#e68a00;*/
+            box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;*/
+            border-style: solid;
+            margin-bottom: 15px;
+          
+            padding: 0 10px 10px 10px;
+            overflow: hidden;            
+            word-wrap: break-word;        
+        }
+
+        div img {
+            float:left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 100%;              
+        }
+
+        div p {
+            font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+            display: block;
+            font-size: 1.0em;
+            font-weight: 500;
+            color: black;            
+            word-wrap: break-word;           
+        }
+        header {
+            background-color: #e67300; /* #ffcc66;  */  
+            /*padding-bottom: 9px;*/
+            margin: auto;
+            padding: 20px 0;
+            border-bottom: 1px solid white;            
+        }
+        h1{
+                margin: 0;
+        }
+        
         .collapsible-header{
             margin: 10px;
             background: white;
         }
 
-        /*
-        .collapsible-body{
+        a {            
+            margin-left: 10px;
             margin-top: 10px;
-            background: white;
-            border-color: e67300; /*#e68a00;
-            box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;
-            border-style: solid;
-            margin-bottom: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #e68a00;; /*#818181*/
+            display: block;
+            transition: 0.3s;
+            font-weight: bold;
         }
-        h4{
-            padding-top: 15px;
-        }
-        hr{
-            padding-top: 15px;
-        }
-        h2{
-            padding-top: 15px;
-        }*/
-        
+                     
     </style>
 
 </head>
-<body>
-    <!--<div id="splash" style="width: 80vw; height: 70vh;"><img src="img/newlogo3.png" style="margin-top:30vh;margin-left:20vw;"></div>-->
-    <div class="headStop">
-        <div class="page-header">
+<body>   
+    <span class="headStop">
+        <header>            
             <h1>Trade Smart</h1>
-        </div>
-        <!--<input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">-->
-        <div id="searchbar">
-        <form id="searching" method="post" onsubmit="searchman()">
-            <input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">
-            <!--<input type="text" id="search" name="search" required autofocus>
-            <input type="submit" onclick="return searchman();" value="Search">-->
+        </header>
+        <a href="index.html" style="float: left;">Back to Main</a>
+        <form id="searchbar" style="margin-right:2px;"> 
+            <input type="button" id="searchBt" onclick="loadsearch()" value="Search">
+            <input type="text" id="searchFilter"  placeholder="Search...">               
         </form>
-        <a href="index.html" id="linkmain">Main menu</a>
-        </div>
-    </div>
-
+     </span>
+     <br>    
+    
     <div id="whatever">
-
     </div>
-
+    
     <footer>
         <p>&copy; 2017, Trade Smart</p>
     </footer>
